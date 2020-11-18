@@ -3,18 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package quizpbo_gui;
-
-import View.MainMenu;
+package View;
 
 /**
  *
  * @author User
  */
-public class Main {
+public class LihatDataMahasiswaPerJurusan {
     
-    
-    public static void main(String[] args) {
-        new MainMenu();
-    }
 }

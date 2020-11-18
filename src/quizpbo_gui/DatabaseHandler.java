@@ -23,12 +23,9 @@ public class DatabaseHandler {
 
     private Connection logOn() {
         try {
-            //Load JDBC Driver
             Class.forName(driver).newInstance();
-            //Buat Object Connection
             con = DriverManager.getConnection(url, username, password);
         } catch (Exception ex) {
-            // handle any errors
             System.out.println("SQLException: " + ex.getMessage());
             System.out.println("SQLState: " + ex.getLocalizedMessage());
             JOptionPane.showMessageDialog(null, "Error Ocurred when login" + ex);
@@ -38,7 +35,6 @@ public class DatabaseHandler {
 
     private void logOff() {
         try {
-            //tutup koneksi
             con.close();
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(null, "Error Ocurred when login" + ex);
